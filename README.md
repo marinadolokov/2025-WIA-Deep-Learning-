@@ -30,9 +30,9 @@ Find and download the data here: https://cloud.fsdweb.de/nexus/s/ZzcngRreqeDgXxy
 * Mo 21.4.: Easter holiday --> NO LECTURE!
 * Wed 23.4.: Programming Lab I (Introduction to Tensorflow / Pytorch and Music Generation with RNNs) 
 * Mon 28.4.: Presentation of FSD and FSD Project Tasks 
-* Wed 30.4.: Explainable AI (XAI) 
-* Mon 5.5.: Programming Lab II (Digit Classification with CNNs in Tensorflow / Pytorch) 
-* Wed 7.5.: Programming Lab III (Diagnosing Bias in Facial Detection Systems)
+* Wed 30.4.: NO LECTURE!
+* Mon 5.5.: Explainable AI (XAI)  
+* Wed 7.5.: Programming Lab II (Digit Classification with CNNs in Tensorflow / Pytorch), Programming Lab III (Diagnosing Bias in Facial Detection Systems)
 * Mon 12.5.: Diffusion Models 
 
 ### Phase 2 (Project part): (Mid-May - End of June)
