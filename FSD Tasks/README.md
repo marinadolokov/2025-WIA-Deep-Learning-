@@ -6,18 +6,22 @@
 
 ## FSD Fahrzeugsystemdaten GmbH
 
-FSD Fahrzeugsystemdaten GmbH serves as the Central Authority according to the German Road Traffic Act (StVG) and is responsible for the advancement of the general vehicle inspection (HU), the development of innovative inspection technologies required for this process, including vehicle-specific parameters, as well as for creating decision-making foundations for the homologation of new vehicles.
+This is an application-oriented course with programming assignments in Python/Tensorflow.
 
-The braking system plays a crucial role in vehicle safety. As part of the general inspection under §29 StVZO, the inspection of the braking system is a key component. In doing so, the procedures and conditions outlined in the HU brake directive must be applied to detect potential defects and ensure both vehicle and traffic safety.
+The course proceeds in three phases: Lecture part, project part, and excursion/project presentation. The lecture part takes place as a face-to-face event every Monday 16:40 - 18:10, Room Z21/381 and Wednesday 16:40 - 18:10, Room Z21/381 during the first six weeks of the semester (exact dates: see below).
 
-To this end, FSD GmbH has developed a procedure that uses a three-axis acceleration and gyroscope sensor to record longitudinal, lateral, and vertical acceleration (ax, ay, az) and roll, pitch, and yaw rates (dx, dy, dz) at a sampling rate of 100 Hz. This data is used to analyze the braking behavior of a vehicle during a dynamic test drive.
+The programming projects include tasks and datasets from automated vehicle testing and are provided by Fahrzeugsystemdaten GmbH (FSD) and co-supervised by Marina Dolokov from FSD. Since proprietary measurement data from FSD GmbH is used, a confidentiality agreement must be signed before starting the project work.
 
-Based on the recorded time series of accelerations and angular velocities, a neural network is trained. This network is then generalized and used to predict, based on the measured braking data of unknown vehicles, whether their braking systems are functioning properly or show signs of defect.
+The programming assignments for the lecture part will be provided later via the Github platform and can be executed in Google Colab even without your own Python/Tensorflow installation.
 
 ---
 
 
-Further information and the tasks will be added here soon.
+## FSD tasks 
+
+- Find the **task description** in the uploaded **pdf Files**. Please read the tasks carefully. 
+- Find and **download the data** here: https://cloud.fsdweb.de/nexus/s/ZzcngRreqeDgXxy the password: FRi2rypFBK
+- !Information how to **submit the solutions** will follow here!
 
 
 #### ... about the final event:

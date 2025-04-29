@@ -12,6 +12,11 @@ The programming projects include tasks and datasets from automated vehicle testi
 
 The programming assignments for the lecture part will be provided later via the Github platform and can be executed in Google Colab even without your own Python/Tensorflow installation.
 
+## FSD tasks 
+
+Find and download the data here: https://cloud.fsdweb.de/nexus/s/ZzcngRreqeDgXxy the password: FRi2rypFBK
+!Information how to submit the solutions will follow here!
+
 ## Schedule
 
 ### Phase 1 (Lecture part): (April - Mid-May)
