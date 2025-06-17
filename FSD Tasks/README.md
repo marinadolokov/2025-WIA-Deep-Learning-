@@ -26,7 +26,7 @@ The programming assignments for the lecture part will be provided later via the 
 
 #### ... about the final event:
 
-* The final event will take place on **Monday, June 23, starting at 9:00 AM in Dresden at Wintergartenstraße 4**.  
+* The final event will take place on **Monday, June 23, starting at 9:30 AM in Dresden at Wintergartenstraße 4**.  
   Initially, you will have the opportunity to present your results at our headquarters. Afterwards, a transfer to our second location in Radeberg (Carl-Eschebach-Straße 2) is organized, where the awards ceremony will take place following a light lunch. In Radeberg, a guided tour in station format will be held, including presentations and live demonstrations in our testing lab. Around 5:00 PM there will be a barbecue, and the return transfer to Dresden is scheduled for 6:00 PM.
 
 * Please remember to push your final report and code to this repository by **June 19 at 4pm (EXTENDED!)**, as described above, so that I have enough time to review your work before the final presentation.
