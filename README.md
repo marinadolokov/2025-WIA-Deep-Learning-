@@ -15,7 +15,7 @@ The programming assignments for the lecture part will be provided later via the 
 ## FSD tasks 
 
 Find and download the data here: https://cloud.fsdweb.de/nexus/s/ZzcngRreqeDgXxy the password: FRi2rypFBK
-!Information how to submit the solutions will follow here!
+**Find information how to submit the solutions in the last email from 17th june and in the subfolder "Students_Solutions"**
 
 ## Schedule
 
@@ -40,7 +40,7 @@ Find and download the data here: https://cloud.fsdweb.de/nexus/s/ZzcngRreqeDgXxy
 * Mon 14.5.: Interim discussion of FSD project tasks
 * Wed 19.5.: Interim discussion of FSD project tasks
 * Mon 26.5.: Interim discussion of FSD project tasks
-* *Submission date Wed 18.6.* !!
+* **Attention: The submission deadline has been updated and extended by one day, as I only provided the information today. The new deadline is Thursday, June 19th, by 4:00 PM!**
 
 Working on the project tasks in small groups (3-4 persons).
 An interim discussion is mandatory for each group.
