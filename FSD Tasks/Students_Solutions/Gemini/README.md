@@ -49,7 +49,16 @@ Please provide everything needed to run your code and reproduce your results.
 Choose one of the following options:
 
 <details>
-<summary><strong>Option A: Conda</strong></summary>
+<summary><strong>Option A: pip</strong></summary>
+
+```bash
+# Install requirements
+pip install -r requirements.txt
+```
+</details>
+
+<details>
+<summary><strong>Option B: Conda</strong></summary>
 
 ```bash
 # Create the environment
@@ -60,14 +69,6 @@ conda activate myenv
 ```
 </details>
 
-<details>
-<summary><strong>Option B: pip</strong></summary>
-
-```bash
-# Install requirements
-pip install -r requirements.txt
-```
-</details>
 
 ### Running the Code
 
@@ -89,7 +90,7 @@ Open results/final_report.pdf
 
 ---
 
-## 4. License & Acknowledgments (optional)
+## 3. License & Acknowledgments (optional)
 
 - If your code uses third-party packages or datasets, cite them appropriately here.
 - You may choose to add a license if you wish to open-source your work.
