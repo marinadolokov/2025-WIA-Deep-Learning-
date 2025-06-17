@@ -16,6 +16,17 @@ groupname (for example "HalloLeute")/
 
 - Please add the final project report as a PDF file to the results folder. The final report should be approximately 15 pages long. However, it may be longer if you consider it necessary. Please indicate who worked on which part. Present your approach and your results. The report serves as documentation and will also be forwarded to the professor. It is one of the requirements for passing the seminar.
 
+- The following criteria will be used to assess your submission.
+
+| Criterion            | Description                                               | 
+|----------------------|-----------------------------------------------------------|
+| Code Quality         | Is the code clean, modular, and readable?                 |                   
+| Documentation        | Are the structure and logic of the project clear?         |                   
+| Functionality        | Does the code run and deliver expected results?           |                   
+| Innovation           | Does the project show creativity or novel approaches?     |                   
+| Teamwork             | Was the project well-organized within the group?          |                   
+
+
 - Please ensure your `README.md` contains the following sections. **Therefore you can adjust this README and delete the first description part until here.**
 
 ---
@@ -75,21 +86,6 @@ Indicate where to find results (e.g., plots, reports, model outputs):
 # Example:
 Open results/final_report.pdf
 ```
-
----
-
-## 3. Evaluation Criteria
-
-The following criteria will be used to assess your submission.
-
-| Criterion            | Description                                               | 
-|----------------------|-----------------------------------------------------------|
-| Code Quality         | Is the code clean, modular, and readable?                 |                   
-| Documentation        | Are the structure and logic of the project clear?         |                   
-| Functionality        | Does the code run and deliver expected results?           |                   
-| Innovation           | Does the project show creativity or novel approaches?     |                   
-| Teamwork             | Was the project well-organized within the group?          |                   
-
 
 ---
 
