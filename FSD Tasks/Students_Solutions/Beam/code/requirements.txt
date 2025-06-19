@@ -1,0 +1,7 @@
+comet_ml==3.49.10
+matplotlib==3.10.3
+numpy==2.3.0
+pandas==2.3.0
+scikit_learn==1.7.0
+seaborn==0.13.2
+tensorflow==2.19.0
