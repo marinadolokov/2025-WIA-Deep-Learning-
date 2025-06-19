@@ -1,0 +1,8 @@
+{
+    "hidden_dim": 64,
+    "num_layers": 3,
+    "dropout": 0.1,
+    "tab_hidden_dim": 64,
+    "learning_rate": 0.001,
+    "batch_size": 128
+}
