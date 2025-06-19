@@ -15,7 +15,7 @@ Network (FCN), a 2D Convolutional Neural Network (CNN), and a Long Short-Term Me
 
 ### Parameters Setup
 
-The parameters are extracted from /configs folder
+The parameters are extracted from /configs folder.<br />
 The parameters description is in the file params.mb
 
 ### Environment Setup
@@ -37,18 +37,19 @@ python -m ipykernel install --user --name=my-env --display-name "my-env"
 
 
 ### Running the Code
+The notebook is code.ipynb.<br />
+-Run the Import cell.<br />
+-Run loading files cell.<br />
+-Depending on the choice of model, import the relevant params.<br />
 
-Run the Import cell.
-Run loading files cell
-    Depending on the choice of model, import the relevant params
-    ```python
+```python
     #Params to use
     # from xxx_params import params
-    from cnn_params import params
-    ```
+    from configs.cnn_params import params
+```
 
-All the functions are under the section Functions. 
-To run experiments run the cell under Main section.
+All the functions are under the section Functions. <br />
+To run experiments run the cell under Main section.<br />
 
 ### Viewing Results
 
