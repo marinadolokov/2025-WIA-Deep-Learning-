@@ -1,0 +1,9 @@
+jupyter 
+torch
+numpy
+matplotlib
+tqdm
+pandas
+scikit-learn
+random
+pickle
