@@ -33,8 +33,8 @@ groupname (for example "HalloLeute")/
 
 ## 1. Group Information
 
-- **Group Name**: GroupXX  
-- **Members**: Full names   
+- **Group Name**: Beam 
+- **Members**: Ben Krüger, Erik Wiese, Anna Kugelmann, Martin Wellendorf   
 - **Project Title**: Descriptive and concise  
 - **Short Description**: Brief summary of your problem statement, approach, and goal
 
