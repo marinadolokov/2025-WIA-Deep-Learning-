@@ -5,7 +5,7 @@
 - **Group Name**: BEAM  
 - **Members**: Ben Krüger, Erik Wiese, Anna Kugelmann, Martin Wellendorf  
 - **Project Title**: FSD Project 
-- **Short Description**: Train and Evlauate different models on brake classification
+- **Short Description**: Train and evaluate different models on brake classification
 
 ---
 
