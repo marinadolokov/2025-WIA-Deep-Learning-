@@ -1,0 +1,13 @@
+criterion: FocalBCE
+criterion_params: {}
+metrics:
+- micro_f1
+- macro_f1
+- micro_precision
+- micro_recall
+- roc_auc_macro
+- roc_auc_micro
+model_type: ExtendedCNNStandartData
+optimizer: Adam
+patience: 10
+scheduler: ReduceLROnPlateau
