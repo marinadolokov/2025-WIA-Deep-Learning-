@@ -36,7 +36,7 @@ Indicate where to find results (e.g., plots, reports, model outputs):
 
 ```bash
 # Example:
-Open results/final_report.pdf
+Open results/BEAM_report.pdf
 ```
 
 ---
