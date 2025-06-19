@@ -1,64 +1,27 @@
-# Group Project Submission – WIA Deep Learning, Neural Networks and Applications 
-
-Welcome to the group project workspace for WIA Deep Learning, Neural Networks & Applications.
-
-Each group should submit their work in a dedicated subfolder of this repository using the following format:
-```
-groupname (for example "HalloLeute")/ 
-├── README.md
-├── code/
-├── data/
-├── environment.yml / requirements.txt
-└── results/
-```
-
-- Please make sure to upload only code files and not data files, as otherwise the repository will become too large. However, if you have trained and saved a final model, you may include it in the repository.
-
-- Please add the final project report as a PDF file to the results folder. The final report should be approximately 15 pages long. However, it may be longer if you consider it necessary. Please indicate who worked on which part. Present your approach and your results. The report serves as documentation and will also be forwarded to the professor. It is one of the requirements for passing the seminar.
-
-- The following criteria will be used to assess your submission.
-
-| Criterion            | Description                                               | 
-|----------------------|-----------------------------------------------------------|
-| Code Quality         | Is the code clean, modular, and readable?                 |                   
-| Documentation        | Are the structure and logic of the project clear?         |                   
-| Functionality        | Does the code run and deliver expected results?           |                   
-| Innovation           | Does the project show creativity or novel approaches?     |                   
-| Teamwork             | Was the project well-organized within the group?          |                   
-
-
-- Please ensure your `README.md` contains the following sections. **Therefore you can adjust this README and delete the first description part until here.**
-
----
-
 ## 1. Group Information
 
-- **Group Name**: GroupXX  
-- **Members**: Full names   
-- **Project Title**: Descriptive and concise  
-- **Short Description**: Brief summary of your problem statement, approach, and goal
+- **Group Name**: HalloLeute  
+- **Members**: Daniel Useche Corchuelo, Sebastian Garcia Sarmiento, Nikita Biswas, Chaeran Yoo   
+- **Project Title**:  Classifying Deceleration Measurement Sequences
+- **Short Description**: Classify whether a vehicle’s braking system is intact or defec-
+tive using sensor data from deceleration measurements series and using networks for that. Three
+different types of neural network architectures are available: a Fully Convolutional
+Network (FCN), a 2D Convolutional Neural Network (CNN), and a Long Short-Term Memory
+(LSTM) network. Additional architectures are also available, and techniques such as preprocessing and data augmentation.
 
 ---
 
 ## 2. Setup & Execution Instructions
 
-Please provide everything needed to run your code and reproduce your results.
+### Parameters Setup
+
+The parameters are extracted from /configs folder.<br />
+The parameters description is in the file params.mb
 
 ### Environment Setup
 
-Choose one of the following options:
-
 <details>
-<summary><strong>Option A: pip</strong></summary>
-
-```bash
-# Install requirements
-pip install -r requirements.txt
-```
-</details>
-
-<details>
-<summary><strong>Option B: Conda</strong></summary>
+<summary><strong>Conda</strong></summary>
 
 ```bash
 # Create the environment
@@ -66,35 +29,43 @@ conda env create -f environment.yml
 
 # Activate the environment
 conda activate myenv
+
+#Use env in jupyter notebook
+python -m ipykernel install --user --name=my-env --display-name "my-env"
 ```
 </details>
 
 
 ### Running the Code
+The notebook is code.ipynb.<br />
+-Run the Import cell.<br />
+-Run loading files cell.<br />
+-Depending on the choice of model, import the relevant params.<br />
 
-Explain clearly how to execute your main script or notebook:
-
-```bash
-# Example: run main pipeline
-python main.py --input data/test.csv --output results/
+```python
+    #Params to use
+    # from xxx_params import params
+    from configs.cnn_params import params
 ```
+
+All the functions are under the section Functions. <br />
+To run experiments run the cell under Main section.<br />
 
 ### Viewing Results
 
-Indicate where to find results (e.g., plots, reports, model outputs):
-
-```bash
+ Comet ML is used to track our model development and training runs. First, sign up for a Comet account. Enter your API key in the API_dict (hold different users).
+```python
 # Example:
-Open results/final_report.pdf
+API_dict = {"User1": "API_user1",
+            "User2": "API_user2"}
 ```
+Also, results are save in a file named Results automatically.
 
----
+## 3. VAE
 
-## 3. License & Acknowledgments (optional)
+The variational autoencoder is independ of the rest. To run this model just run stand alone cell under VAE section.
 
-- If your code uses third-party packages or datasets, cite them appropriately here.
-- You may choose to add a license if you wish to open-source your work.
 
----
 
-Thank you for your submission!
+
+
