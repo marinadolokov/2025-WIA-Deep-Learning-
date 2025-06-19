@@ -1,100 +1,64 @@
-# Group Project Submission – WIA Deep Learning, Neural Networks and Applications 
-
-Welcome to the group project workspace for WIA Deep Learning, Neural Networks & Applications.
-
-Each group should submit their work in a dedicated subfolder of this repository using the following format:
-```
-groupname (for example "HalloLeute")/ 
-├── README.md
-├── code/
-├── data/
-├── environment.yml / requirements.txt
-└── results/
-```
-
-- Please make sure to upload only code files and not data files, as otherwise the repository will become too large. However, if you have trained and saved a final model, you may include it in the repository.
-
-- Please add the final project report as a PDF file to the results folder. The final report should be approximately 15 pages long. However, it may be longer if you consider it necessary. Please indicate who worked on which part. Present your approach and your results. The report serves as documentation and will also be forwarded to the professor. It is one of the requirements for passing the seminar.
-
-- The following criteria will be used to assess your submission.
-
-| Criterion            | Description                                               | 
-|----------------------|-----------------------------------------------------------|
-| Code Quality         | Is the code clean, modular, and readable?                 |                   
-| Documentation        | Are the structure and logic of the project clear?         |                   
-| Functionality        | Does the code run and deliver expected results?           |                   
-| Innovation           | Does the project show creativity or novel approaches?     |                   
-| Teamwork             | Was the project well-organized within the group?          |                   
-
-
-- Please ensure your `README.md` contains the following sections. **Therefore you can adjust this README and delete the first description part until here.**
-
----
-
 ## 1. Group Information
 
-- **Group Name**: GroupXX  
-- **Members**: Full names   
-- **Project Title**: Descriptive and concise  
-- **Short Description**: Brief summary of your problem statement, approach, and goal
+- **Group Name**: Lasagna  
+- **Members**: Moritz Handrejk, Tim Rothe, Helmi Ghliss, Malak Mrini
+- **Project Title**: Deep Learning models and synthetic data generation for vehicle brake condition classification  
+- **Short Description**: This repository investigates braking condition classification using Deep Learning models with extensive hyperparameter tuning and synthetic data generation using cGANs and RNNs with its application in classification training. 
 
 ---
 
 ## 2. Setup & Execution Instructions
 
-Please provide everything needed to run your code and reproduce your results.
+### Environment Setup (via `pip`)
 
-### Environment Setup
+Please install the python package requirements via:
 
-Choose one of the following options:
-
-<details>
-<summary><strong>Option A: pip</strong></summary>
-
-```bash
-# Install requirements
+```python
 pip install -r requirements.txt
 ```
-</details>
 
-<details>
-<summary><strong>Option B: Conda</strong></summary>
+For GPU acceleration make sure you install the right version of `pytorch`.
+Especially for training in Task 2 it helps to have GPU acceleration.
 
-```bash
-# Create the environment
-conda env create -f environment.yml
+**For interactive analysis in `augmentation.ipynb`,`benchmark.ipynb` and `data_analysis.ipynb` it is recommended to use `JupyterLab`, since parts of the dataset view is implemented using `ipywidgets`!**
 
-# Activate the environment
-conda activate myenv
-```
-</details>
+We only worked in a Linux environment (including WSL2), therefore we did not make sure that this will run on Windows as well.
 
+It was also successfully tried to run `pytorch` with AMD GPU acceleration. 
+A Dockerfile for the environment is in this folder, though running `pip install -r requirements.txt` might resolve additional dependencies. 
+It will automatically run a `jupyter-lab` instance on start. 
+If you want to run this, please follow [AMD's installation guide](https://rocm.docs.amd.com/en/latest/) first.
 
 ### Running the Code
 
-Explain clearly how to execute your main script or notebook:
+The project has a straightforward structure. 
+As a first task (folder `task1`) we tried to find useful parameter combinations for braking classifiers based on different neural network architectures (`cnn`,`fcn` and `lstm`).
+The notebook for the parameter search for every architecture can be found in its folder, together with a python file `model.py` which exports the chosen architecture. 
+Finally, to compare the performance of different models a jupyter notebook called `benchmark.ipynb` is supplied.
+This allows to compare the models under the same environment using random-splitting and feedback from the test dataset.
 
-```bash
-# Example: run main pipeline
-python main.py --input data/test.csv --output results/
-```
+The second task (folder `task2`) is structured in the same manner.
+For each architecture (`gan` and `rnn`) the folders show how the training of the networks is implemented and reflect the training process in the report. 
+The python files `model.py` export the modules.
+Finally, the results get compared in `augmentation.ipynb` by importing the same modules from Task 2 and filling these with trained parameters.
+
+As a small bonus, a notebook called `data_analysis.ipynb` shows the general structure of the training dataset.
 
 ### Viewing Results
 
-Indicate where to find results (e.g., plots, reports, model outputs):
+#### Task 1
 
-```bash
-# Example:
-Open results/final_report.pdf
-```
+The following steps can be taken:
 
----
+1. Read the [report](results/report.pdf) located in `results`. It is already full of exported diagrams, which show the results.
+2. Run `benchmark.ipynb` for specific performance tests of the implemented models under similar conditions.
+3. Finally, run the parameter search yourself using the notebooks in their respective folders (`cnn`, `fcn` and `lstm`).
 
-## 3. License & Acknowledgments (optional)
+#### Task 2
 
-- If your code uses third-party packages or datasets, cite them appropriately here.
-- You may choose to add a license if you wish to open-source your work.
+The following steps can be taken:
 
----
-
-Thank you for your submission!
+1. Read the [report](results/report.pdf) located in `results`. It is already full of exported diagrams, which show the results.
+2. Train the GAN by running `gan.ipynb`. This notebook exports parameters to `models/generator-gan.pt` of the directory of Task 2. An already trained model is provided.
+3. Train the RNN by running `rnn-teacher-forcing-embedding.ipynb`. This notebook exports parameters to `models/generator-rnn.pt` of the directory of Task 2. An already trained model is provided.
+4. Use the parameters of each model and compare the outputs by running `augmentation.ipynb`.
